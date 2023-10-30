@@ -16,7 +16,7 @@ This project appears to be a **Rust project** that involves **interacting with a
 (Improved with COPILOT)
 
 ## Set Up 
-* This part specifies **how to install the packages and run the code** (Improved with COPILOT)
+* This part specifies **how to install the packages and run the code**
 1. Run `make install` to install all packages listed in Cargo.toml
 
 2. Run `make build-up` to build up Rust code
