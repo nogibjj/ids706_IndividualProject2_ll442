@@ -9,13 +9,12 @@ This project appears to be a **Rust project** that involves **interacting with a
 ## Requirements
 1. Rust 1.73
 2. Virtual environment (optional but recommended, already set up as env in Makefile)
-3. Packages listed in [dependencies] in `Cargo.toml`, including 
+3. Packages listed in [dependencies] in `Cargo.toml`, including (Improved with COPILOT)
 * `rusqlite`: A Rust library for working with SQLite databases.
 
 * `serde`: A Rust library for serializing and deserializing data structures.
 
 * `serde_json`: A Rust library for working with JSON data.
-(Improved with COPILOT)
 
 ## Set Up 
 * This part specifies **how to install the packages and run the code**
