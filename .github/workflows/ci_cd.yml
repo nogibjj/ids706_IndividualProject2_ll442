@@ -1,4 +1,4 @@
-name: CI
+name: Rust CI/CD
 
 on:
   push:
@@ -30,3 +30,9 @@ jobs:
       - run: make refactor
       - name: deploy project
       - run: make deploy
+
+      - name: Upload Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: optimized-rust-binary
+        path: target/release/sqlite_rust_project
