@@ -13,7 +13,7 @@ This Rust project implements the Command Line Interaction with the database [boo
 
 
 ## Set Up 
-* This part specifies **how to install the packages and run the code**
+This part specifies **how to install the packages and run the code**
 1. Run `make install` to install all packages listed in Cargo.toml
 
 2. Run `make build-up` to build up Rust code
