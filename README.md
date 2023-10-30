@@ -1,5 +1,5 @@
 # Individual Project 2: Rust CLI Binary with SQLite
-This Rust project implements the Command Line Interaction with a database realized by SQLite
+This Rust project implements the Command Line Interaction with the database [book.db](https://github.com/nogibjj/ids706_IndividualProject2_ll442/blob/main/book.db) stored in SQLite
 
 ## Environments
 
