@@ -58,7 +58,7 @@ In this project, both the **unit tests** and **itegration test** are carried out
 * Integration Tests under `tests/` test the interactions between multiple parts of your library or between your library and other systems.
 
 
-## 4. Structure
+## 5. Structure
 (Project Requirement)
 1. `./src`: **Rust source code** with CRUD queries
 
@@ -77,5 +77,5 @@ In this project, both the **unit tests** and **itegration test** are carried out
 
 8. `.gitignore` includes all the files that do not want to be tracked by github
 
-## 5. Video Demo
+## 6. Video Demo
 Attached is the explanation of individual project. Through this video, you can better understand how it works!:D
