@@ -1,13 +1,16 @@
 extern crate sqlite_rust_project;
 
-use rusqlite::{params, Connection, Result};
-use sqlite_rust_project::{connect_to_database,create_table,insert_data,read_data,update_data,delete_data,count_book_by_stock,fetch_books_ordered_by_name};
+use rusqlite::{Result};
+use sqlite_rust_project::{
+    connect_to_database, count_book_by_stock, create_table, delete_data,
+    fetch_books_ordered_by_name, insert_data, read_data, update_data,
+};
 
 fn main() -> Result<()> {
     let db_name = "book.db";
     let conn = connect_to_database(db_name)?;
 
-    // Create 
+    // Create
     let query_creation = "
         CREATE TABLE IF NOT EXISTS books (
             id INTEGER PRIMARY KEY,

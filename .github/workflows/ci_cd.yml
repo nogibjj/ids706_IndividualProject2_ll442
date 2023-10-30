@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    name: Build, Test and Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+      - run: (test -x $HOME/.cargo/bin/mdbook || cargo install --vers "^0.4" mdbook)
+      - name: Install packets
+      - run: make install
+      - name: Test rust
+      - run: make test
+      - name: Format the code
+      - run: make format
+      - name: Lint the code
+      - run: make lint
+      - name: Lint the container
+      - run: make container-lint
+      - name: Refactor
+      - run: make refactor
+      - name: deploy project
+      - run: make deploy

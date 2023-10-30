@@ -1,6 +1,5 @@
 use rusqlite::{params, Connection, Result};
 
-
 pub fn connect_to_database(db: &str) -> Result<Connection> {
     Connection::open(db)
 }
@@ -10,7 +9,13 @@ pub fn create_table(conn: &Connection, query_creation: &str) -> Result<()> {
     Ok(())
 }
 
-pub fn insert_data(conn: &Connection, sql_insertion: &str, i1: &str, i2: i64, i3: &str) -> Result<()> {
+pub fn insert_data(
+    conn: &Connection,
+    sql_insertion: &str,
+    i1: &str,
+    i2: i64,
+    i3: &str,
+) -> Result<()> {
     conn.execute(sql_insertion, params![i1, i2, i3])?;
     Ok(())
 }

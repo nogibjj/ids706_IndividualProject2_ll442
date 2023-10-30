@@ -1,6 +1,8 @@
 install:
-	rustup update &&\
-		cargo build --release
+	rustup update
+
+build-up:		
+	cargo build --release
 
 test:
 	cargo test
