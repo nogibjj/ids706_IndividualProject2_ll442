@@ -79,4 +79,4 @@ In this project, both the **unit tests** and **itegration test** are carried out
 
 ## 6. Video Demo
 Attached is the explanation of individual project. Through this video, you can better understand how it works!:D
-https://youtu.be/p7BFTpA0VoM
+[ids706 project2](https://youtu.be/169KgWNqKI0)
